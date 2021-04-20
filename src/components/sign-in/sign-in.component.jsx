@@ -51,10 +51,10 @@ export class SignIn extends Component {
 						value={this.state.password}
 						required
 					/>
-
-					<CustomButton type='submit' > Sign In</CustomButton>
-					<CustomButton onClick={signInWithGoogle}>Sign In With Googe</CustomButton>
-
+					<div className="buttons">
+					<CustomButton type='submit'> Sign In</CustomButton>
+					<CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign In With Googe</CustomButton>
+					</div>
 				</form>
 			</div>
 		)
