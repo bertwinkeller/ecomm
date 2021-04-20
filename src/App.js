@@ -32,6 +32,7 @@ class App extends Component {
               ...snapShot.data()
             }
           })
+          console.log(this.state)
         })
       } else {
         this.setState({ currentUser: userAuth })
@@ -52,7 +53,6 @@ class App extends Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route path='/signin' component={Authenticate} />
-
         </Switch>
       </div>
     );
